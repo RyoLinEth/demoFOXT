@@ -1,0 +1,445 @@
+.App {
+  background-color: #262A3D;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* 
+  =================
+  =================
+  Check
+  =================
+  =================
+*/
+
+.RewardTable,
+.Web3Table,
+.StatusTable {
+  background-color: #6D7089;
+  opacity: 0.9;
+  margin-bottom: 3vh;
+  width: 80vw;
+  border-radius: 10px;
+}
+
+/*  Common Area   */
+
+.titlespan {
+  flex: 1;
+  background: #DE3897;
+}
+
+
+/*  First Three Table Area  */
+
+.FirstThreeTable {
+  background-color: #6D7089;
+  opacity: 0.9;
+  margin-bottom: 3vh;
+  width: 80vw;
+  border-radius: 10px;
+}
+
+.FirstThreeTable_Title {
+  flex-direction: row;
+  display: flex;
+}
+
+.FirstThreeTable_TitleContent {
+  flex: 19;
+}
+
+.FirstThreeTable_Rule {
+  flex: 5;
+}
+
+.FirstThreeTable_Content {
+  width: 100%;
+  align-content: center;
+}
+
+.FirstThreeTable_Picture {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.FirstThreeTable_FirstPlace {
+  flex: 1;
+  max-width: 30vw;
+}
+
+.FirstThreeTable_SecondPlace {
+  flex: 1;
+  max-width: 20vw;
+  margin-left: 8vw;
+}
+
+.FirstThreeTable_ThridPlace {
+  flex: 1;
+}
+
+#FirstPlaceImage {
+  max-width: 30vw;
+}
+
+#SecondPlaceImage,
+#ThirdPlaceImage {
+  max-width: 20vw;
+}
+
+
+/* 
+  =================
+  =================
+  Check
+  =================
+  =================
+*/
+
+.Modal {
+  z-index: 1000;
+}
+
+/* 
+  =================
+  =================
+  Check
+  =================
+  =================
+*/
+
+#BannerImage {
+  position: relative;
+  z-index: 15;
+  width: 80vw;
+  border-radius: 20px;
+}
+
+#LotteryImage {
+  position: relative;
+  z-index: 15;
+  width: 80vw;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* 
+  =================
+  =================
+  Check
+  =================
+  =================
+*/
+
+.App-header {
+  margin-bottom: 20vh;
+}
+
+/* 
+  =================
+  =================
+  Check
+  =================
+  =================
+*/
+
+button {
+  cursor: pointer;
+}
+
+#ConnectButton {
+  flex: 1;
+  position: absolute;
+  margin-top: 30px;
+  right: 5vw;
+  background-color: transparent;
+  color: white;
+  height: 30px;
+  margin-bottom: 30px;
+}
+
+/* 
+  =================
+  =================
+  Check
+  =================
+  =================
+*/
+
+#amount {
+  border-radius: 10px;
+}
+
+.GuessDiv,
+.ButtonRow {
+  display: flex;
+  flex-direction: row;
+  z-index: -1;
+}
+
+.GuessRight,
+.ButtonRight {
+  flex: 2;
+  background-color: #6D7089;
+  opacity: 0.9;
+  margin-bottom: 3vh;
+  width: 30vw;
+  border-radius: 10px;
+}
+
+
+.btnLeftPrimary {
+  height: 10vh;
+  flex: 2;
+  background-color: #411b57;
+  color: white;
+  opacity: 0.9;
+  margin-bottom: 3vh;
+  margin-right: 3vw;
+  margin-left: 3vw;
+  width: 30vw;
+  border-radius: 10px;
+}
+
+.btnLeftOutline {
+  /* background-color: #a76a99; */
+  flex: 2;
+  background-color: white;
+  color: #411b57;
+  opacity: 0.9;
+  margin-bottom: 3vh;
+  margin-right: 3vh;
+  width: 30vw;
+  border-radius: 10px;
+}
+
+.GuessLeft,
+.ButtonLeft {
+  flex: 2;
+  background-color: #6D7089;
+  opacity: 0.9;
+  margin-bottom: 3vh;
+  margin-right: 3vh;
+  width: 30vw;
+  border-radius: 10px;
+}
+
+.titlespan {
+  width: 4px;
+  height: 16px;
+  background: #DE3897;
+}
+
+.GuessRight {
+  margin-left: 3vw;
+}
+
+/*
+  ==========================================================
+  ==========================================================
+
+                          FOR MODALS
+
+  ==========================================================
+  ==========================================================
+*/
+
+/* Modal */
+.overlay {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.modalContainer {
+  max-width: 600px;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+}
+
+.modalGameContainer {
+  max-width: 600px;
+  width: 100%;
+  position: fixed;
+  z-index: 45;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+}
+
+.modalRight {
+  width: 100%;
+}
+
+.closeBtn {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+}
+
+.btnContainer {
+  display: flex;
+  padding: 1rem 1rem;
+}
+
+.GamebtnContainer {
+  display: flex;
+  padding: 1rem 1rem;
+}
+
+.GamebtnContainer input {
+  width: 100%;
+  margin: 0rem .5rem .5rem .5rem;
+  padding: 16px 0;
+  /* border: none; */
+  border: 1px solid #411b57;
+  /* color: #ffffff; */
+}
+
+.btnContainer input {
+  width: 100%;
+  margin: .5rem;
+  padding: 16px 0;
+  /* border: none; */
+  border: 1px solid #411b57;
+  /* color: #ffffff; */
+}
+
+.btnPrimary {
+  background-color: #411b57;
+  color: white;
+  cursor: pointer;
+}
+
+label,
+p {
+  color: black;
+}
+
+.btnOutline {
+  /* background-color: #a76a99; */
+  background-color: white;
+  color: #411b57;
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 500px) {
+  .btnLeftPrimary {
+    height: 15vh;
+  }
+
+  .modalContainer,
+  .modalGameContainer {
+    flex-direction: column;
+    top: 20vh;
+    left: 20vw;
+    transform: none;
+    width: 60vw;
+    height: 60vh;
+  }
+
+  .closeBtn {
+    position: absolute;
+    top: 1vh;
+    right: 5vw;
+  }
+
+  .heading {
+    margin: 1rem;
+  }
+
+  #vid {
+    width: 80vw;
+    height: fit-content;
+    margin-top: 20vh;
+    position: fixed;
+    z-index: 6000;
+  }
+}
+
+.HistorySameRow,
+.HistorySameRow1,
+.HistorySameRow2,
+.HistorySameRow3,
+.HistorySameRow4 {
+  display: flex;
+  flex-direction: row;
+}
+
+.HistorySameRow {
+  border: 1px solid white;
+}
+
+.HistorySameRow1 {
+  flex: 1
+}
+
+.HistorySameRow2 {
+  flex: 3
+}
+
+.HistorySameRow3 {
+  flex: 2
+}
+
+.HistorySameRow4 {
+  flex: 2
+}
+
+h4 {
+  color: black;
+}
+
+.GuessTitle {
+  display: flex;
+  flex-direction: row;
+}
+
+.GuessTitle_Left,
+.GuessTitle_Title,
+.GuessTitle_Rule {
+  flex: 1;
+}
+
+.GuessTitle_Rule {
+  cursor: pointer;
+}
+
+#vid {
+  width: 80vw;
+  position: fixed;
+  z-index: 6000;
+}
